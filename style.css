@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: auto;
+    background-color: #D4DEED;
+}
+
+.content-container {
+    display: flex;
+    background-color: #C5D8D1;
+    padding: 30px;
+    border: solid black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+html {
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    line-height: 50px;
+}
+
+footer {
+    position: fixed;
+    background-color: #C5D8D1;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.howto {
+    padding: 10px;
+    text-align: left;
+}
+
+.rules {
+    padding: 10px;
+    text-align: left;
+}
+
+.new-game-button {
+    text-align: center;
+    padding: 15px;
+}
+
+.gameOutcome {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 10px;
+    font-size: 8em;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    margin: 60px;
+    justify-content: center;
+    perspective: 500px;
+}
+
+.card-names {
+    line-height: 175px;
+}
+
+.cards {
+    position: relative;
+    background-color: #FEF9EF;
+    height: 165px;
+    width: 115px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.card-back {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF9EF;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.cardClass {
+    line-height: 165px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.cards.visible .card-back {
+    transform: rotateY(-180deg);
+}
+
+.cards.visible .card-front {
+    transform: rotateY(0);
+}
+
+.back-design {
+    position: absolute;
+    height: 155px;
+    width: 105px;
+}
+
+.scores {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.btns {
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.btns:active {
+    position: relative;
+    top: 2px;
+}

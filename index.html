@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeworks Black Jack Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>CodeWorks BlackJack Game</h1>
+        </header>
+        <section class="content-container">
+            <section class="rules">
+                <h2>Rules</h2>
+                <p>Official rules can be found <a href="https://en.wikipedia.org/wiki/Blackjack?__s=ifx58nw9sjsfcryykft1#Rules" target="_blank">here</a>. The following rules were implemented here:</p>
+                <ul>
+                    <li>Player is dealt two cards to start. Dealer is then also dealt two cards with only first one visible.</li>
+                    <li>Ace can be worth one or eleven. Jack, Queen and King are worth ten.</li>
+                    <li>Beat the dealer with 21 or having more points while under 21.</li>
+                    <li>"Bust" is when you exceed 21.</li>
+                </ul>
+            </section>
+            <section class="howto">
+                <h2>How to Play</h2>
+                <p>Deal Cards to see your starting point. Hit Me to receive another card. Stand when you are finished to see dealers card.</p>
+            </section>
+        </section>
+
+
+        <section class="new-game-button" id="newButton">
+            <button class="btns" id="newGame">New Game</button>
+        </section>
+        <section class="gameOutcome"></section>
+    </main>
+
+    <section class="game-container visible">
+        <div class="card-names">Dealer Cards</div>
+        <div class="cards" id="card1">
+            <div class="card-back">
+                <img class="back-design" src="./resouces/images/cardback.png">
+            </div>
+            <div class="card-front">
+                <img>
+            </div>
+        </div>
+        <div class="cards" id="card2">
+            <div class="card-back">
+                <img class="back-design" src="./resouces/images/cardback.png">
+            </div>
+            <div class="card-front">
+                <img>
+            </div>
+        </div>
+        <div class="cards" id="card3">
+            <div class="card-back">
+                <img class="back-design" src="./resouces/images/cardback.png">
+            </div>
+            <div class="card-front">
+                <img>
+            </div>
+        </div>
+        <div class="cards" id="card4">
+            <div class="card-back">
+                <img class="back-design" src="./resouces/images/cardback.png">
+            </div>
+            <div class="card-front">
+                <img>
+            </div>
+        </div>
+        <div class="cards" id="card5">
+            <div class="card-back">
+                <img class="back-design" src="./resouces/images/cardback.png">
+            </div>
+            <div class="card-front">
+                <img>
+            </div>
+        </div>
+        <div class="card-names">Player Cards</div>
+        <div class="cards" id="card6">
+            <div class="card-back">
+                <img class="back-design" src="./resouces/images/cardback.png">
+            </div>
+            <div class="card-front">
+                <img>
+            </div>
+        </div>
+        <div class="cards" id="card7">
+            <div class="card-back">
+                <img class="back-design" src="./resouces/images/cardback.png">
+            </div>
+            <div class="card-front">
+                <img>
+            </div>
+        </div>
+        <div class="cards" id="card8">
+            <div class="card-back">
+                <img class="back-design" src="./resouces/images/cardback.png">
+            </div>
+            <div class="card-front">
+                <img>
+            </div>
+        </div>
+        <div class="cards" id="card9">
+            <div class="card-back">
+                <img class="back-design" src="./resouces/images/cardback.png">
+            </div>
+            <div class="card-front">
+                <img>
+            </div>
+        </div>
+        <div class="cards" id="card10">
+            <div class="card-back">
+                <img class="back-design" src="./resouces/images/cardback.png">
+            </div>
+            <div class="card-front">
+                <img>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="scores">
+        <div class="player-scores">
+            Player Score: <span class="playerScoreOut">0</span>
+        </div>
+        <div class="dealer-scores">
+            Dealer Score: <span class="dealerScoreOut">0</span>
+        </div>
+    </section>
+
+    <section class="buttons">
+        <button class="btns" id="deal-button" onclick="">Deal Cards</button>
+        <button class="btns" id="hit-button" onclick="">Hit Me</button>
+        <button class="btns" id="stand-button" onclick="">Stand</button>
+    </section>
+
+
+    <footer>
+        <small><a href="https://codepen.io/Villux " target="_blank ">Codepen</a> | <a href=# target="_blank ">Github</a>   </small>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js " integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=" anonymous "></script>
+    <script src="./index.js "></script>
+</body>
+
+</html>
