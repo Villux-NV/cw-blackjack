@@ -118,7 +118,7 @@ function startGame() {
 
 //New Game button. Just a refresh since no data needs to be saved.
 $("#newGame").on("click", function() {
-    location.reload();
+    location.reload(true);
 });
 
 //Deals dealer until end game.
